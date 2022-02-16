@@ -28,7 +28,7 @@
          margin-right: 10px;
          grid-area: column1;
          background-color: #e9c46a;
-         width: 33%;
+
      }
      .column2{
         margin: auto;
@@ -36,14 +36,13 @@
         margin-right: 10px;
         grid-area: column2;
         background-color: #f4a261;
-        width: 33%;
+
     }
     .column3{
         margin: auto;
         padding: 2%;
         grid-area: column3;
         background-color: #e76f51;
-        width: 34%;
     }
     h2{
         padding: 10px;
