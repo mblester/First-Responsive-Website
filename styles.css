@@ -15,8 +15,8 @@
     }
     main {
             background-color:#264653;
-            grid-area: main;
             display: flex;
+            grid-area: main;
             justify-content: space-evenly;
             align-content: center;
             padding:5%;
@@ -28,44 +28,51 @@
          margin-right: 10px;
          grid-area: column1;
          background-color: #e9c46a;
+         width: 33%;
      }
      .column2{
         margin: auto;
         padding: 2%;
         margin-right: 10px;
-        grid-area: column1;
-        background-color: #f4a261
+        grid-area: column2;
+        background-color: #f4a261;
+        width: 33%;
     }
     .column3{
         margin: auto;
         padding: 2%;
-        grid-area: column1;
+        grid-area: column3;
         background-color: #e76f51;
+        width: 34%;
     }
     h2{
         padding: 10px;
         background-color: #2a9d8f;
     }
 
-
 @media (min-width: 992px) { 
     .container {
-        grid-template-columns: auto auto auto;
-        grid-template-areas:
-          "header header header"
-         "main main main"
-         "column1" "column2" "column3"
-          "footer footer footer"
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "header header header"
+        "main main main"
+        "column1" "column2" "column3";
       }
 }
 @media (max-width: 600px) {
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "header"
-        "main"
-        "column1"
-        "column2"
-        "column3"
+  main{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas:
+      "header"
+      "main"
+      "column1"
+      "column2"
+      "column3";
+      grid-gap:10px;
+      align-content: center;
+  }
+  .column3{
+    margin-right:10px;
   }
 }
